@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lulumall Website</title>
+    <link rel="icon" href="https://www.luluhypermarket.in/medias/lulu-logo-new.png?context=bWFzdGVyfGltYWdlc3w0MTc3OXxpbWFnZS9wbmd8YUdJd0wyaGtaQzg1TWpZNU5EY3lPVGcxTVRFNEwyeDFiSFV0Ykc5bmJ5MXVaWGN1Y0c1bnxiOWVkODc1OWJmZWFmNjYzNGFiY2RmMjJmODJlNTliOTY0YWQwNjFiZGNmZWEzMTJiZTVmMmY4MjY2YmQ3Zjhl">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <img class="lulu-logo" src="https://www.luluhypermarket.in/medias/lulu-logo-new.png?context=bWFzdGVyfGltYWdlc3w0MTc3OXxpbWFnZS9wbmd8YUdJd0wyaGtaQzg1TWpZNU5EY3lPVGcxTVRFNEwyeDFiSFV0Ykc5bmJ5MXVaWGN1Y0c1bnxiOWVkODc1OWJmZWFmNjYzNGFiY2RmMjJmODJlNTliOTY0YWQwNjFiZGNmZWEzMTJiZTVmMmY4MjY2YmQ3Zjhl" alt="">
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active ms-5" aria-current="page" href="#">Home</a>
+              </li>
+              <li>
+                <button class="btn btn-success ms-5" onclick="generatemessage()">Home Delivery</button>
+              </li>
+              <li>
+                <a class="nav-link active ms-5" aria-current="page">Login</a>
+              </li>
+              <li>
+                <a href="" class="nav-link active ms-5"><i class="fa-solid fa-cart-shopping"></i></a>
+              </li>
+            </ul>
+            <form class="d-flex me-auto">
+              <input class="form-control ms-4 inp" type="search" placeholder="Search" aria-label="Search">
+            </form>
+          </div>
+        </div>
+      </nav>
+    <!--/navbar-->
+
+    <!--banner-->
+    <div class="container">
+    <div class="banner-section mt-3">
+        <div class="row mt-5 ms-3  ms-lg-5">
+            <div class="col-6 col-md-3 mt-5">
+                <img src="https://www.luluhypermarket.in/medias/new-layout-02.jpg?context=bWFzdGVyfGltYWdlc3w0MTgzNHxpbWFnZS9qcGVnfGFESmlMMmhtTlM4NU5ETXlOalV5TlRFek16RXdMMjVsZHlCc1lYbHZkWFF0TURJdWFuQm58MmVkYzg1MWFhYjVlYWEzYjcwNmI5M2MxMzQ4MDY3YTAzM2FhYjgzNWZlMjM3NjljMmQ0ZTM4ZWI4NTk3Mzk3MA" alt="">
+            </div>
+            <div class="col-6 col-md-3 mt-5">
+                <img src="https://www.luluhypermarket.in/medias/new-layout-03.jpg?context=bWFzdGVyfGltYWdlc3wzODg0MXxpbWFnZS9qcGVnfGFEZGtMMmhtTkM4NU5ETXlOalV5TlRjNE9EUTJMMjVsZHlCc1lYbHZkWFF0TURNdWFuQm58OGI0NjA1MGVjNDgwNGEyOWQ0ODhmNzYwMTc3ZGQ0YjMzZDc3NmM0OGRhYTNmNmQyYWU2NjE5Mjc1OGQ4ZTcwNg" alt="">
+            </div>
+            <div class="col-6 col-md-3 mt-5">
+                <img src="https://www.luluhypermarket.in/medias/new-layout-04.jpg?context=bWFzdGVyfGltYWdlc3w0NjE2MnxpbWFnZS9qcGVnfGFEUXlMMmd5TXk4NU5EYzBOalV6TURrek9URTRMMjVsZHlCc1lYbHZkWFF0TURRdWFuQm58MmY4ZDc2ZWQ5MTYzYTczNTAwN2ZmYzM3ZDNiNWEwYmUyNzc0MDgzZTMxYWYzYWIxYjQ1YjFlMzBhNWY4ZWE4Zg" alt="">
+            </div>
+            <div class="col-6 col-md-3 mt-5">
+                <img src="https://www.luluhypermarket.in/medias/new-layout-06.jpg?context=bWFzdGVyfGltYWdlc3wzMDY3OHxpbWFnZS9qcGVnfGFEWmxMMmhsWlM4NU5ETXlOalV5TnpBNU9URTRMMjVsZHlCc1lYbHZkWFF0TURZdWFuQm58MzcxOTkzODc3ZjZlNzExN2Q4M2ZkZDcwMzJmODY4NDAyMzg2MDcwOWNhZmUzZjY1NWE1NWUxNzExZDlhZjhjMw" alt="">
+            </div>
+        </div>
+    </div>
+   </div>
+    <!--/banner-->
+
+    <!--slider-section-->
+    <div id="carouselExampleControls" class="carousel slide mt-2" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://www.luluhypermarket.in/medias/home-01.jpg?context=bWFzdGVyfHJvb3R8MjY0NDI0fGltYWdlL2pwZWd8YUdGakwyZzBNQzg1TmpNeE1UTTRNREl4TkRBMkwyaHZiV1V0TURFdWFuQm58NzJhM2JkYWI4N2I1NGYxMDkxZjI2N2NjMTQyYzFkY2RkZjYzYmE4MjlhMjE5YTNiNDZhODZjZmJjM2UwZGRhMg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.luluhypermarket.in/medias/Untitled-2fabric-care2-01.jpg?context=bWFzdGVyfHJvb3R8MzIyNjI1fGltYWdlL2pwZWd8YURZeEwyZ3pZeTg1TmpNek5UUXdNalF6TkRnMkwxVnVkR2wwYkdWa0xUSm1ZV0p5YVdNZ1kyRnlaVEl0TURFdWFuQm58NWNiNDhhMjI4OWE0OTdjZjA4NDkxNTU0ZTMxMGVjNTYxYTc1NzVhMjMwNTMwNjlhYjgwYzcyZTYyYjc2ZGYzNw" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.luluhypermarket.in/medias/bevereage-01.jpg?context=bWFzdGVyfHJvb3R8NjgxMjk2fGltYWdlL2pwZWd8YURrekwyaGlZUzg1TlRVMk1UVXlOVEUyTmpNNEwySmxkbVZ5WldGblpTMHdNUzVxY0djfDU4ZGNhMzZhYzRiMzZjOGI1ODAzMmNkNzZhODQxZDBmMDMwNDI1NjVlZDM2NjI0NWMzZDIyYTNjN2M0ODA1NGI" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.luluhypermarket.in/medias/GROCERY-scroll-banners-04.jpg?context=bWFzdGVyfHJvb3R8Mjc5Nzk2fGltYWdlL2pwZWd8YURVeUwyZzFOeTg1TlRnNE56VTBOREUxTmpRMkwwZFNUME5GVWxrdGMyTnliMnhzTFdKaGJtNWxjbk10TURRdWFuQm58ZWU1NWI1YzExYjI3ZDg5ZTY3ZTg4MjI0N2IxZjEzNGFiYzNhNjQ3Mjk5OTRiOTBkZDhkNjk4YjQwNTM4NDM5NQ" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.luluhypermarket.in/medias/month-end-savers-01.png?context=bWFzdGVyfHJvb3R8MzY3NzcyfGltYWdlL3BuZ3xhR00wTDJoak5TODVOalF3T1RVME1qWTFOak13TDIxdmJuUm9JR1Z1WkNCellYWmxjbk10TFRBeExuQnVad3wxMTczY2VmODJmMmIzYjAzZDc1ZTE2OGYxN2M1ZmU2NDA4M2QzNjg3NmE5NzllOGVkM2ZkMTk3M2I3N2RlYzcw" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.luluhypermarket.in/medias/cooking-and-dining.jpg?context=bWFzdGVyfHJvb3R8MjkwNzc0fGltYWdlL2pwZWd8YURVMEwyZzFOQzg1TlRnNE56VTBNelV3TVRFd0wyTnZiMnRwYm1jdFlXNWtMV1JwYm1sdVp5NXFjR2N8ZGJhMTdjMzQ5NzIzM2VkMDFmMWQwZjgxYWYwM2VkNTc0NWQzNjBiOGY0ZmFlZDg1Zjk5NzlkMjYxZmQ3ODVmNA" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    <!--/slider-section-->
+
+    <!--ad-section-->
+    <div class="container">
+        <div class="row mt-4">
+        <div class="col-12">
+            <img class="ad-image" src="https://www.luluhypermarket.in/medias/Tasty-nibbles-04.jpg?context=bWFzdGVyfHJvb3R8MTEyOTIwfGltYWdlL2pwZWd8YURZNUwyaGxZUzg1TmpNeU9Ua3dOekkwTVRJMkwxUmhjM1I1SUc1cFltSnNaWE10TURRdWFuQm58NDdmY2NmNDhmMGYzMzY0NzkwZDE0MDRhYWIyYjE5MjcwYzUwNGYwNzg4ZGQ3MWU2NjdmMDVhNDIyZWVkYzczOQ" alt="">
+        </div>
+    </div>
+    </div>
+    <!--/ad-section-->
+
+    <!--category-section-->
+    <div class="container">
+    <div class="category-section mt-3">
+    <div class="row">
+        <div class="col-12 col-lg-6 mb-2">
+            <img class="category-image" src="https://www.luluhypermarket.in/medias/new-layout-11.jpg?context=bWFzdGVyfHJvb3R8OTk2MjJ8aW1hZ2UvanBlZ3xhR1ZoTDJnd05DODVORE0yTkRrek1qVXdOVGt3TDI1bGR5QnNZWGx2ZFhRdE1URXVhbkJufGUxNmUzOWM1ZjUyN2ZlZDQ0YTI1OTk5NmY1ZWU2YWM1MGU5ZDM0MjA4NTFjMWZiZDk2ZGM0Y2I2NWQ0ODBhMWI" alt="">
+        </div>
+        <div class="col-12 col-lg-6 mb-2">
+            <img class="category-image" src="https://www.luluhypermarket.in/medias/new-layout-13.jpg?context=bWFzdGVyfHJvb3R8ODUwMzl8aW1hZ2UvanBlZ3xhR1ZqTDJnd01TODVORE0yTkRrek16RTJNVEkyTDI1bGR5QnNZWGx2ZFhRdE1UTXVhbkJufDg2MTI3NDAzYTFiYTU2YjE3MmM5OWU2M2JmYWJkNTExMTNkZGUxOGI3NTJhMjAwYjBiNTRmOGY5NGY1NTAyNWQ" alt="">
+        </div>
+        <div class="col-12 col-lg-6 mb-2">
+            <img class="category-image" src="https://www.luluhypermarket.in/medias/new-layout-12.jpg?context=bWFzdGVyfHJvb3R8OTY3NDZ8aW1hZ2UvanBlZ3xhRE13TDJnNVpTODVORE0yT0Rnd05qazVOREl5TDI1bGR5QnNZWGx2ZFhRdE1USXVhbkJufGVkYmI0YzBkMzk3NzNiMGY1YzIyZGFjZmJjOTZiOTEyYTcxMWUyMzllNzMyZWY0ODM5ZTg2ODk3OGY4MmY2YzQ" alt="">
+        </div>
+        <div class="col-12 col-lg-6 mb-2">
+            <img class="category-image" src="https://www.luluhypermarket.in/medias/new-layout-13.jpg?context=bWFzdGVyfHJvb3R8ODUwMzl8aW1hZ2UvanBlZ3xhR1ZqTDJnd01TODVORE0yTkRrek16RTJNVEkyTDI1bGR5QnNZWGx2ZFhRdE1UTXVhbkJufDg2MTI3NDAzYTFiYTU2YjE3MmM5OWU2M2JmYWJkNTExMTNkZGUxOGI3NTJhMjAwYjBiNTRmOGY5NGY1NTAyNWQ" alt="">
+        </div>
+        <div class="col-12 col-lg-6 mb-2">
+            <img class="category-image" src="https://www.luluhypermarket.in/medias/new-layout-12.jpg?context=bWFzdGVyfHJvb3R8OTY3NDZ8aW1hZ2UvanBlZ3xhRE13TDJnNVpTODVORE0yT0Rnd05qazVOREl5TDI1bGR5QnNZWGx2ZFhRdE1USXVhbkJufGVkYmI0YzBkMzk3NzNiMGY1YzIyZGFjZmJjOTZiOTEyYTcxMWUyMzllNzMyZWY0ODM5ZTg2ODk3OGY4MmY2YzQ" alt="">
+        </div>
+        <div class="col-12 col-lg-6 mb-2">
+            <img class="category-image" src="https://www.luluhypermarket.in/medias/new-layout-14.jpg?context=bWFzdGVyfHJvb3R8MTI5NDYyfGltYWdlL2pwZWd8YURReEwyaGhNUzg1TkRNMk9EZ3dOelkwT1RVNEwyNWxkeUJzWVhsdmRYUXRNVFF1YW5CbnwyNDRhZDQwZGZjOTQ2N2Q1NGEwOTdhMTZkOTM4YjJkMmVhYjgxMDAzOGJlNjhkYWZmZGVhYTI2NjA4MmU2ZjQz" alt="">
+        </div>
+    </div>
+    </div>
+    </div>
+    <!--/category-section-->
+
+    <!--products-section-->
+    <div class="product-section">
+        <div class="container">
+        <div class="row pt-5">
+            <h4 class="headings">Big Deals on Big Appliances</h4>
+            <div class="col-6 col-lg-3 mb-2 text-center">
+                <div class="card text-center" style="width: 13rem;">
+                    <img src="https://www.luluhypermarket.in/medias/300Wx300H-null?context=bWFzdGVyfGltYWdlc3wxMDEwNHxpbWFnZS9qcGVnfGFHTmlMMmczWlM4NU16RTRNVFF5TlRReE9EVTBMek13TUZkNE16QXdTRjl1ZFd4c3xhMThlMGNlMmJmZTA3NDMwNjQyOTBmN2JhMjFiNTRjZGQzZDA0YzBmM2QxZGY5ZDdjMWMwYjNkYWRiOTNhYWIx" class="card-img-top product-image" alt="...">
+                    <div class="text-center mt-2 mb-2">
+                      <p>price:500</p>
+                      <button class="btn btn-success">Add</button>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-6 col-lg-3 mb-2">
+                <div class="card" style="width: 13rem;">
+                    <img src="https://www.luluhypermarket.in/medias/1669259-01.jpg-300Wx300H?context=bWFzdGVyfGltYWdlc3w5MzU2fGltYWdlL2pwZWd8YUdabUwyZzRaaTg1TWpFM09EVTNPRFEzTXpJMkx6RTJOamt5TlRrdE1ERXVhbkJuWHpNd01GZDRNekF3U0F8OWMwYmM5ZjI2YzUwZmVlOGI4MmNjOGUyNjk1NDY0MjFhNjcwNDRmNzA0OWZlNGYzMWQzNjhlMTk5MGQ4MTNmOQ" class="card-img-top product-image" alt="...">
+                    <div class="text-center mt-2 mb-2">
+                      <p>price:500</p>
+                      <button class="btn btn-success">Add</button>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-6 col-lg-3 mb-2">
+                <div class="card" style="width: 13rem;">
+                    <img src="https://www.luluhypermarket.in/medias/300Wx300H-null?context=bWFzdGVyfGltYWdlc3wxMjQ0MHxpbWFnZS9qcGVnfGFEQTNMMmcwTWk4NU5EQTNPVGN4TWpZeU5EazBMek13TUZkNE16QXdTRjl1ZFd4c3xkZjg5MzdhMjIzM2Y0OWU0Njc5OGU0YjRkMjg1MTU1ZDlmZjk5NjM4ZWFlM2I1MTE4NTMyNmFlZjk0MWM1OGIz" class="card-img-top product-image" alt="...">
+                    <div class="text-center mt-2 mb-2">
+                      <p>price:500</p>
+                      <button class="btn btn-success">Add</button>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-6 col-lg-3 mb-2">
+                <div class="card" style="width: 13rem;">
+                    <img src="https://www.luluhypermarket.in/medias/1594821-01.jpg-300Wx300H?context=bWFzdGVyfGltYWdlc3wxMTY0NHxpbWFnZS9qcGVnfGFERmpMMmd4WXk4NU1UWTBPRGN5TlRRNE16Z3lMekUxT1RRNE1qRXRNREV1YW5Cblh6TXdNRmQ0TXpBd1NBfDg1OGQ0MTEyZDJlYjYxYjExNGJkOTk2NTVlOWNlZmNlMTAyMTI3MjVhZGJjMWZlNDZkZTJlZDYyOGQ4NGQwNjM" class="card-img-top product-image" alt="...">
+                    <div class="text-center mt-2 mb-2">
+                      <p>price:500</p>
+                      <button class="btn btn-success">Add</button>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="row pt-5">
+          <h4 class="headings">Killer Deals</h4>
+           <div class="col-6 col-lg-3 mb-2">
+            <div class="card" style="width: 13rem;">
+                <img src="https://www.luluhypermarket.in/medias/300Wx300H-null?context=bWFzdGVyfGltYWdlc3wxNTIyOXxpbWFnZS9qcGVnfGFERTVMMmd4Tnk4NU5qSTRNVE0zTkRVMU5qUTJMek13TUZkNE16QXdTRjl1ZFd4c3xjZWEzYjRjNDIxZjVjZjZmYjRlNTNkMjg5MzUyYzcwZTc2ZDRkNTcyNWJkZjhlMGE0OGMwMzA4Njk0NTI3MmQ4" class="card-img-top product-image" alt="...">
+                <div class="text-center mt-2 mb-2">
+                  <p>price:500</p>
+                  <button class="btn btn-success">Add</button>
+                </div>
+              </div>
+           </div>
+           <div class="col-6 col-lg-3 mb-2">
+            <div class="card" style="width: 13rem;">
+                <img src="https://www.luluhypermarket.in/medias/300Wx300H-null?context=bWFzdGVyfGltYWdlc3wxMTM3OHxpbWFnZS9qcGVnfGFHRTRMMmcxT0M4NU5URTRPVFEwTURreU1Ua3dMek13TUZkNE16QXdTRjl1ZFd4c3w5YTdlNzI2NWRjNjkwMzVmOTA4OWE2YzZkNmFjNGY2OTNhYTc0ZjBiMWMwYWJlMDhjNjgwMGE4Njg3ZTM3ZWNj" class="card-img-top product-image" alt="...">
+                <div class="text-center mt-2 mb-2">
+                  <p>price:500</p>
+                  <button class="btn btn-success">Add</button>
+                </div>
+              </div>
+           </div>
+           <div class="col-6 col-lg-3 mb-2">
+            <div class="card" style="width: 13rem;">
+                <img src="https://www.luluhypermarket.in/medias/300Wx300H-null?context=bWFzdGVyfGltYWdlc3wxMzQ5NHxpbWFnZS9qcGVnfGFEZzRMMmhoWWk4NU5USTROekUzTWpRMk5EazBMek13TUZkNE16QXdTRjl1ZFd4c3wzNzliMjdlM2Q1YmFkOWJhZjhlYTg1ZmNhYjE0ZDAyMWU5ZGQ4MmIxZjQ5NzhhNDYyOTE3NTkzMjY5OTZiYmQ1" class="card-img-top product-image" alt="...">
+                <div class="text-center mt-2 mb-2">
+                  <p>price:500</p>
+                  <button class="btn btn-success">Add</button>
+                </div>
+              </div>
+           </div>
+           <div class="col-6 col-lg-3 mb-2">
+            <div class="card" style="width: 13rem;">
+                <img src="https://www.luluhypermarket.in/medias/1642936-01.jpg-300Wx300H?context=bWFzdGVyfGltYWdlc3wxMDQxNnxpbWFnZS9qcGVnfGFHVXlMMmhpT0M4NU1qRXlOVFEzTnpreU9USTJMekUyTkRJNU16WXRNREV1YW5Cblh6TXdNRmQ0TXpBd1NBfDQxN2I3NjQyZTE3MzAyOGVkNGVkNDZhMzM2NmY0ZmI4ZTNiMDIyYzU4ZmZiNDE0YmJkMzkzNWM2NzljMTViOTQ" class="card-img-top product-image" alt="...">
+                <div class="text-center mt-2 mb-2">
+                  <p>price:500</p>
+                  <button class="btn btn-success">Add</button>
+                </div>
+              </div>
+           </div>
+        </div>
+        <div class="row">
+          <h4 class="headings">UP TO 50% OFF</h4>
+          <div class="col-6 col-lg-3 mb-2">
+            <div class="card" style="width: 13rem;">
+              <img src="https://www.luluhypermarket.in/medias/287-0001.jpg-300Wx300H?context=bWFzdGVyfGltYWdlc3w0NDE4NXxpbWFnZS9qcGVnfGFEZzVMMmczWVM4NE9UVXhOVGt4TVRjME1UYzBMekk0Tnkwd01EQXhMbXB3WjE4ek1EQlhlRE13TUVnfDFlZDRiMTk0ZGE4MmM2YTYzMjc2ZDU4Yzk1YWM4OTYwYTEyOWJlMjcxMTZhZGJkOTdmNTBlYjljYWMzY2QyMzI" class="card-img-top" alt="...">
+              <div class="text-center mt-2 mb-2">
+                <p>price:500</p>
+                <button class="btn btn-success">Add</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3 mb-2">
+            <div class="card" style="width: 13rem;">
+              <img src="https://www.luluhypermarket.in/medias/285-01.jpg-300Wx300H?context=bWFzdGVyfGltYWdlc3wzMTU4OHxpbWFnZS9qcGVnfGFHRTBMMmhrTmk4NE56azRNRFkxTVRNeE5UVXdMekk0TlMwd01TNXFjR2RmTXpBd1YzZ3pNREJJfGFiMjc2MTFlZDVjMGY3NTg0MDcxOGIwMmYzMzhkZmFhMWYyNjZlZTdkOWM2MDQwNTQwYzJjNmI1NDRiZjU4ODM" class="card-img-top" alt="...">
+              <div class="text-center mt-2 mb-2">
+                <p>price:500</p>
+                <button class="btn btn-success">Add</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3 mb-2">
+            <div class="card" style="width: 13rem;">
+              <img src="https://www.luluhypermarket.in/medias/10520-0001.jpg-300Wx300H?context=bWFzdGVyfGltYWdlc3w0MDAyM3xpbWFnZS9qcGVnfGFEQmpMMmhrWkM4NE9UVXhNelkyTXpnMU5qazBMekV3TlRJd0xUQXdNREV1YW5Cblh6TXdNRmQ0TXpBd1NBfGQ2ZDJkZTNjOTVhNDI3NjMzMmI5OGYwZmE0NDE3OGZjNmFlY2M2ZGJiNjdhNDVmNTIzYWFkMWFiYTRiOGQ5OTA" class="card-img-top" alt="...">
+              <div class="text-center mt-2 mb-2">
+                <p>price:500</p>
+                <button class="btn btn-success">Add</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3 mb-2">
+            <div class="card" style="width: 13rem;">
+              <img src="https://www.luluhypermarket.in/medias/1326825-01.jpg-300Wx300H?context=bWFzdGVyfGltYWdlc3wxOTQzNHxpbWFnZS9qcGVnfGFETmlMMmcyTkM4NU1EWTNORGM0TkRVd01qQTJMekV6TWpZNE1qVXRNREV1YW5Cblh6TXdNRmQ0TXpBd1NBfDk0NGY1MGJmZjI3NGYyNzc1NDU0ZDRlYThiNTdkYjkyYzExNzk3NTgzM2Y0YTQ2YjkxYmM0ZTgyYTg5MzZjZGQ" class="card-img-top" alt="...">
+              <div class="text-center mt-2 mb-2">
+                <p>price:500</p>
+                <button class="btn btn-success">Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <h4 class="headings">Fresh Deals</h4>
+          <div class="col-6 col-lg-3 mb-2">
+            <div class="card" style="width: 13rem;">
+              <img src="https://www.luluhypermarket.in/medias/192392-01.jpg-300Wx300H?context=bWFzdGVyfGltYWdlc3wxNDM1NXxpbWFnZS9qcGVnfGFESXhMMmd4WWk4NE9EUTVPVEl3TVRrMk5qTTRMekU1TWpNNU1pMHdNUzVxY0dkZk16QXdWM2d6TURCSXxlZWZkNjYyZTMwOTJiZjViNTJjZDE5MjYzNzA4OTlkNjk2ZGQ2YmUwN2ZlNmQ5YzlkZTc1MTg4NzdjMTgzMTZl" class="card-img-top" alt="...">
+              <div class="text-center mt-2 mb-2">
+                <p>price:500</p>
+                <button class="btn btn-success">Add</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3 mb-2">
+            <div class="card" style="width: 13rem;">
+              <img src="https://www.luluhypermarket.in/medias/624351-01.jpg-300Wx300H?context=bWFzdGVyfGltYWdlc3wxNDU4MXxpbWFnZS9qcGVnfGFEVTJMMmcxWlM4NE9ESXpPVEl3TkRreU5UYzBMell5TkRNMU1TMHdNUzVxY0dkZk16QXdWM2d6TURCSXw0M2JjZjE5MjAwYmFjNTEyZGE3YWEzZTA5YTViNjA4YzgyYWNlMDE2NjIyZmUwN2FlNmFkYWQ3MWM4ZWVkMmM5" class="card-img-top" alt="...">
+              <div class="text-center mt-2 mb-2">
+                <p>price:500</p>
+                <button class="btn btn-success">Add</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3 mb-2">
+            <div class="card" style="width: 13rem;">
+              <img src="https://www.luluhypermarket.in/medias/7649-01.jpg-300Wx300H?context=bWFzdGVyfGltYWdlc3wxMjYwNHxpbWFnZS9qcGVnfGFETmlMMmd5T1M4NE9EWXlNek15TnpRM09EQTJMemMyTkRrdE1ERXVhbkJuWHpNd01GZDRNekF3U0F8NjU5MGY5Y2UyOGVhYjZiNmY0ZDcyYjdhZTE1NGQ2ZTAzYjM2ZGM2Mjc0OGUwNDIzMDJhN2FjMzYyNjNmMWMzZA" class="card-img-top" alt="...">
+              <div class="text-center mt-2 mb-2">
+                <p>price:500</p>
+                <button class="btn btn-success">Add</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3 mb-2">
+            <div class="card" style="width: 13rem;">
+              <img src="https://www.luluhypermarket.in/medias/8260-001.jpg-300Wx300H?context=bWFzdGVyfGltYWdlc3wxMzYwMXxpbWFnZS9qcGVnfGFHSmtMMmd5WVM4NE9EUTROVGc0T0RrNE16TTBMemd5TmpBdE1EQXhMbXB3WjE4ek1EQlhlRE13TUVnfDE3YTQ1OWNlOTAxYTVkMjI1M2M3OWU3NjViYTBlNjc1ZmU1ODgzODY5Y2IwYWUyZTI1YWQ4NjFhNzk5ODYzNGQ" class="card-img-top" alt="...">
+              <div class="text-center mt-2 mb-2">
+                <p>price:500</p>
+                <button class="btn btn-success">Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-12 col-lg-6 mb-2">
+            <img class="ad-image" src="https://www.luluhypermarket.in/medias/5-banner-01.jpg?context=bWFzdGVyfGltYWdlc3wxODczOTZ8aW1hZ2UvanBlZ3xhR1JsTDJoaU9DODVOVGcwTmpnM09EUXhNekV3THpVZ1ltRnVibVZ5TFRBeExtcHdad3w4YTM5Nzc1NmRmNjBmNTQxMjI2OWVhZTYwMjA2NWQwZDBmMjUzZDJmZmY3NWJhNjk0ZjE0MTVjZDg5Y2RjNTA1" alt="">
+          </div>
+          <div class="col-6 col-lg-3 mb-2">
+            <img class="ad-image" src="https://www.luluhypermarket.in/medias/5-banner-05.jpg?context=bWFzdGVyfGltYWdlc3w2MjQ0OXxpbWFnZS9qcGVnfGFERmxMMmhpTlM4NU5UZzBOamczT1RjeU16Z3lMelVnWW1GdWJtVnlMVEExTG1wd1p3fDNmYmFmZGY5NmE5NTE3YzBmY2Y1ODQ5N2QyNGFiZGVkMjhjODZmZmIyYzNmNzk1MDgzNGE4NDVjMDE5MzRjYjg" alt="">
+            <img class="ad-image mt-2" src="https://www.luluhypermarket.in/medias/5-banner-04.jpg?context=bWFzdGVyfGltYWdlc3w3NDk3NnxpbWFnZS9qcGVnfGFHRTFMMmcyTXk4NU5UZzBOamc0TWpNME5USTJMelVnWW1GdWJtVnlMVEEwTG1wd1p3fDhiMTU4MzljN2Y3YzljODljMTkwZmU1YTk2N2M1YmU2ZjI4NzIwZDA4NmRmNTA1YjY2MDc2ZTQ4OGQ5ODBjZTc" alt="">
+          </div>
+          <div class="col-6 col-lg-3 mb-2">
+            <img class="ad-image" src="https://www.luluhypermarket.in/medias/5-banner-02.jpg?context=bWFzdGVyfGltYWdlc3w3NDA4M3xpbWFnZS9qcGVnfGFEWTBMMmcyTnk4NU5UZzBOamc0TVRBek5EVTBMelVnWW1GdWJtVnlMVEF5TG1wd1p3fDNmZTkxMzI2ZDEyMTU1ZWExODY2MjAyOGZiODliYzExYzhlNDk0YzcwYThhMDA2NGRjZjk4YjNkYWVmOTI4ZDg" alt="">
+            <img class="ad-image mt-2" src="https://www.luluhypermarket.in/medias/5-banner-03.jpg?context=bWFzdGVyfGltYWdlc3w2NzM4OHxpbWFnZS9qcGVnfGFEa3pMMmcyTUM4NU5UZzBOamc0TXpBd01EWXlMelVnWW1GdWJtVnlMVEF6TG1wd1p3fGMwMGMwZmVjNWIyODI4NmZhYWViNjhiMjQ0ZDhhOTI0YjNkMTU2YTE0ZTFkMzA1YWIzOGMxMWE3MzQyZjBlMWY" alt="">
+          </div>
+        </div>
+        <div class="row mt-3">
+          <h4 class="headings">Facial & Skin Care</h4>
+          <div class="col-6 col-lg-3 mb-2">
+            <div class="card" style="width: 13rem;">
+              <img src="https://www.luluhypermarket.in/medias/732346-01.jpg-300Wx300H?context=bWFzdGVyfGltYWdlc3wxODYyOHxpbWFnZS9qcGVnfGFEYzVMMmhpWkM4NE9EVTNORGs0T0RjM09UZ3lMemN6TWpNME5pMHdNUzVxY0dkZk16QXdWM2d6TURCSXw4NDEyNDg4MjRiYjYzNWU0YTYwNmU0NGE2NmQ3MzBhZGMzMWUyODFmZjAzZDBmNTU0M2Y4NzUwMjI2M2MzMDE1" class="card-img-top" alt="...">
+              <div class="text-center mt-2 mb-2">
+                <p>price:500</p>
+                <button class="btn btn-success">Add</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3 mb-2">
+            <div class="card" style="width: 13rem;">
+              <img src="https://www.luluhypermarket.in/medias/1815-01.jpg-300Wx300H?context=bWFzdGVyfGltYWdlc3wxNzE3M3xpbWFnZS9qcGVnfGFERTFMMmhrWVM4NU1UTXdOVGc1TURJNE16Z3lMekU0TVRVdE1ERXVhbkJuWHpNd01GZDRNekF3U0F8MWM5MTNkNzJmN2RlYTI3MzBjZDY2NWFlMDBkZmVhMjg5OTcwMDk1ZDI2NmIzYmY1MTYzZTQ1ODExOTZkMzhkMQ" class="card-img-top" alt="...">
+              <div class="text-center mt-2 mb-2">
+                <p>price:500</p>
+                <button class="btn btn-success">Add</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3 mb-2">
+            <div class="card" style="width: 13rem;">
+              <img src="https://www.luluhypermarket.in/medias/32180-001.jpg-300Wx300H?context=bWFzdGVyfGltYWdlc3wxNzkxOXxpbWFnZS9qcGVnfGFEZzNMMmcyTlM4NE9EWTNOVE15TURFek5UazRMek15TVRnd0xUQXdNUzVxY0dkZk16QXdWM2d6TURCSXw3YzgyOTZiZjk1NDlkNTA1OGE0MGQ3OGJlMWNmODNhNmFjM2Y0YTU5Y2IyODQyZTM4YjFiMWIyZjJjZGI1NmM3" class="card-img-top" alt="...">
+              <div class="text-center mt-2 mb-2">
+                <p>price:500</p>
+                <button class="btn btn-success">Add</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3 mb-2">
+            <div class="card" style="width: 13rem;">
+              <img src="https://www.luluhypermarket.in/medias/300Wx300H-null?context=bWFzdGVyfGltYWdlc3wyNDkwOHxpbWFnZS9qcGVnfGFHWmpMMmczWmk4NU16SXdNell3TkRRek9UTTBMek13TUZkNE16QXdTRjl1ZFd4c3xhZjgzZjMyNDkyNzc4NTZiMDZlMjQ2NjQyYTI4MzE2MGZiMmNhMDBhZjU5NTJmNzVkYWM4NDVjYjdlNWFkMzNi" class="card-img-top" alt="...">
+              <div class="text-center mt-2 mb-2">
+                <p>price:500</p>
+                <button class="btn btn-success">Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <h4 class="headings">Kitchen Appliances</h4>
+          <div class="col-6 col-lg-3  mb-2">
+            <div class="card" style="width: 13rem;">
+              <img src="https://www.luluhypermarket.in/medias/kitchen-312x263-01.jpg?context=bWFzdGVyfGltYWdlc3w3MzM4OHxpbWFnZS9qcGVnfGFHTTBMMmhtTXk4NU5UWTFNVFU0TVRFek16RXdMMnRwZEdOb1pXNGdNekV5ZURJMk15MHdNUzVxY0djfGYyOWE1OGFkMWM0ODE4OWNkMWMzMWYwNWMwYWNhNjgwMTE2NjI2NTFiZWRiODNkMzJhNWZjYWE0NjUyMGZhNTc" class="card-img-top" alt="...">
+              <div class="text-center mt-2 mb-2">
+                <p>price:500</p>
+                <button class="btn btn-success">Add</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3 mb-2">
+            <div class="card" style="width: 13rem;">
+              <img src="https://www.luluhypermarket.in/medias/kitchen-312x263-02.jpg?context=bWFzdGVyfGltYWdlc3w3NDUxMHxpbWFnZS9qcGVnfGFEUXlMMmhtWWk4NU5UWTFNVFU0TXpjMU5EVTBMMnRwZEdOb1pXNGdNekV5ZURJMk15MHdNaTVxY0djfDM0ZTczMWYyNmNkOWQ3MDE1Y2RmZWVjZTI1OWIxZjdkM2Q0NmJhNWFhY2U5NTdiMTliYzIyOTU5NDVmYmEwMDg" class="card-img-top" alt="...">
+              <div class="text-center mt-2 mb-2">
+                <p>price:500</p>
+                <button class="btn btn-success">Add</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3 mb-2">
+            <div class="card" style="width: 13rem;">
+              <img src="https://www.luluhypermarket.in/medias/kitchen-312x263-03.jpg?context=bWFzdGVyfGltYWdlc3w3NzMwOHxpbWFnZS9qcGVnfGFHRmxMMmhtWlM4NU5UWTFNVFU0TlRBMk5USTJMMnRwZEdOb1pXNGdNekV5ZURJMk15MHdNeTVxY0djfDQwYzdjY2E0NTBiZjJlOGVkNzgxMzIzYzgzZTc3ODdlMWEyMjhhNzgzZGZlN2ZlNTIzNjljMTM0M2RjZWRiYzc" class="card-img-top" alt="...">
+              <div class="text-center mt-2 mb-2">
+                <p>price:500</p>
+                <button class="btn btn-success">Add</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3 mb-2">
+            <div class="card" style="width:13rem;">
+              <img src="https://www.luluhypermarket.in/medias/kitchen-312x263-04.jpg?context=bWFzdGVyfGltYWdlc3w3OTE4NHxpbWFnZS9qcGVnfGFEZ3pMMmhtTnk4NU5UWTFNVFU0TWpRME16Z3lMMnRwZEdOb1pXNGdNekV5ZURJMk15MHdOQzVxY0djfDFjMDg3OGU4MmMxMjlkMDc2MDQ0M2JkMGU2OTFlNDY5OTE1MWNiZjNkY2U4ODM4ZTkwMDRmYWRhZjFkMmEwN2M" class="card-img-top" alt="...">
+              <div class="text-center mt-2 mb-2">
+                <p>price:500</p>
+                <button class="btn btn-success">Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-12 col-lg-6 mb-2">
+            <img class="ad-image" src="https://www.luluhypermarket.in/medias/new-layout-23.jpg?context=bWFzdGVyfHJvb3R8MTMzNzQ0fGltYWdlL2pwZWd8YUdKaEwyZ3pNUzg1TkRNMk9UWTBOamd6T0RBMkwyNWxkeUJzWVhsdmRYUXRNak11YW5Cbnw1MTgwNDNhNWE1Nzc1MTUyMDI5M2I5NGQwNWM2NmZlZGIwYTI5NGU0NDdlYTdmYWQwNzQ5YmVhYjcwYjA0MzQ1" alt="">
+          </div>
+          <div class="col-12 col-lg-6 mb-2">
+            <img class="ad-image" src="https://www.luluhypermarket.in/medias/new-layout-26.jpg?context=bWFzdGVyfHJvb3R8MTM0MzM2fGltYWdlL2pwZWd8YUdObUwyZ3paQzg1TkRNMk9UY3pPVEkwTXpneUwyNWxkeUJzWVhsdmRYUXRNall1YW5Cbnw4ZjZiZDFmNGZkMzUyZDQ2ZGZkYjhhMWYyZmQ5MWYyOWFiNDJhMDY3OWE1NjljM2U2NDQwN2MzY2UyM2E5Njcx" alt="">
+          </div>
+          <div class="col-12 col-lg-6 mb-2">
+            <img class="ad-image" src="https://www.luluhypermarket.in/medias/new-layout-25.jpg?context=bWFzdGVyfHJvb3R8OTkxNDN8aW1hZ2UvanBlZ3xhRFl4TDJnMU1pODVORE0zTURVeU9EazFNall5TDI1bGR5QnNZWGx2ZFhRdE1qVXVhbkJufDFlOTc4NjdmNTg2OTQ5OWRjMjZjM2Y3ZTQ3ZGU2MWU0ZGRjNmQzZTA5MjAzOGQzNThmMDk2N2QxM2Y4MjNkOTI" alt="">
+          </div>
+          <div class="col-12 col-lg-6 mb-2">
+            <img class="ad-image" src="https://www.luluhypermarket.in/medias/new-layout-28.jpg?context=bWFzdGVyfHJvb3R8MTA5MzU5fGltYWdlL2pwZWd8YURCakwyZ3lZaTg1TkRNM01EVTRPVEkwTlRjMEwyNWxkeUJzWVhsdmRYUXRNamd1YW5CbnwxZTAyYTRhMzcxOWIyZjMxYjkzNzNjNTUyZDhkYjQ5NmJmNTQ2MjAzYmEyNDdlNjYyY2Q4NGEyYjA5ODViMjkx" alt="">
+          </div>
+        </div>
+        <div class="row mt-3">
+          <h4 class="headings">Stationary</h4>
+          <div class="col-6 col-lg-3 mb-2">
+            <div class="card" style="width: 13rem;">
+              <img src="https://www.luluhypermarket.in/medias/300Wx300H-null?context=bWFzdGVyfGltYWdlc3wyNDE5M3xpbWFnZS9qcGVnfGFEY3pMMmhoWVM4NU5UazRNamczTURJd01EWXlMek13TUZkNE16QXdTRjl1ZFd4c3wzMTU4YWVkYjU4ZDUyZjFiOGM0ODk4Y2ZmYjIzMTVjMDdjYzFhYTg4ZmFkM2FmOTY2NWFhMWUzMGFkMWY5Zjlj" class="card-img-top" alt="...">
+              <div class="text-center mt-2 mb-2">
+                <p>price:500</p>
+                <button class="btn btn-success">Add</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3 mb-2">
+            <div class="card" style="width: 13rem;">
+              <img src="https://www.luluhypermarket.in/medias/300Wx300H-null?context=bWFzdGVyfGltYWdlc3wyMDMwMXxpbWFnZS9qcGVnfGFHTmlMMmd3WXk4NU16RXdPREV5T0RNeE56YzBMek13TUZkNE16QXdTRjl1ZFd4c3xhODcxMWM1MzgxMmMwMmQwMDEwNjljM2ZiMDY4NTc2OWM4YWYyZDVjNzAwZGE0YmEwYTE0NjcxNWIxM2ZmNDdl" class="card-img-top" alt="...">
+              <div class="text-center mt-2 mb-2">
+                <p>price:500</p>
+                <button class="btn btn-success">Add</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3 mb-2">
+            <div class="card" style="width: 13rem;">
+              <img src="https://www.luluhypermarket.in/medias/158468-01.jpg-300Wx300H?context=bWFzdGVyfGltYWdlc3wyNDAyN3xpbWFnZS9qcGVnfGFEWXlMMmhoTUM4NE9EVTNNVEV3TVRnek9UWTJMekUxT0RRMk9DMHdNUzVxY0dkZk16QXdWM2d6TURCSXwyNzI4ZTA5NjFiMDg1MmI4Zjk2OTMzZThjODZhOGI0OWI2Y2RlYzE2NThkMDYyYjE5OGVlMDA3N2UzMDNlNmZh" class="card-img-top" alt="...">
+              <div class="text-center mt-2 mb-2">
+                <p>price:500</p>
+                <button class="btn btn-success">Add</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3 mb-2">
+            <div class="card" style="width: 13rem;">
+              <img src="https://www.luluhypermarket.in/medias/300Wx300H-null?context=bWFzdGVyfGltYWdlc3wyMzI1NnxpbWFnZS9qcGVnfGFEWXlMMmcwWmk4NU5UZ3pPREkyTVRReE1qRTBMek13TUZkNE16QXdTRjl1ZFd4c3xkOGI1ZTFjMDg3MmM0ZWMxNjllMzcwNDM0NDNhNjkyZWE4NjFmZDNkMWFlOWM4ZmViNDM2ZDMwMGNiNWZiMGFl" class="card-img-top" alt="...">
+              <div class="text-center mt-2 mb-2">
+                <p>price:500</p>
+                <button class="btn btn-success">Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <h4 class="headings">Luggage & Accessories</h4>
+          <div class="col-6 col-lg-3">
+            <div class="card" style="width: 13rem;">
+              <img src="https://www.luluhypermarket.in/medias/300Wx300H-null?context=bWFzdGVyfGltYWdlc3wyNjIwNXxpbWFnZS9qcGVnfGFEWTVMMmhtWVM4NU16azJNVFV3TlRNME1UYzBMek13TUZkNE16QXdTRjl1ZFd4c3w3MzYxN2FjYWViOGM4NTFjZTU2MjBhYzQzYWQyMWIzMzJhMTYzOGU4YTBjZWY1MWJjZjQ2YzU2NTFiZGFjMjI5" class="card-img-top" alt="...">
+              <div class="text-center mt-2 mb-2">
+                <p>price:500</p>
+                <button class="btn btn-success">Add</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="card" style="width: 13rem;">
+              <img src="https://www.luluhypermarket.in/medias/300Wx300H-null?context=bWFzdGVyfGltYWdlc3wyMTAwOXxpbWFnZS9qcGVnfGFEbGxMMmhpT1M4NU5EazBNelF3TlRBeE5UTTBMek13TUZkNE16QXdTRjl1ZFd4c3wyM2RkOWJmNjZmODJmMjM5NjIxM2U0ZGNmYTM3MmRlYzM5ZTU4Y2RjY2JmNzk4NDk5NDlhZGI3ZjUzMmE3ZGFm" class="card-img-top" alt="...">
+              <div class="text-center mt-2 mb-2">
+                <p>price:500</p>
+                <button class="btn btn-success">Add</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="card" style="width: 13rem;">
+              <img src="https://www.luluhypermarket.in/medias/300Wx300H-null?context=bWFzdGVyfGltYWdlc3wzMTk5NHxpbWFnZS9qcGVnfGFHUmhMMmd4TkM4NU16WXhNREF6TVRnME1UVTRMek13TUZkNE16QXdTRjl1ZFd4c3w3Nzk4YmI2YTAwZTVlZGZmZjY4MWVmMjliNmRjZGQxZWQ4MTI1NmI3NGM0ZjFiNGVlYmMyZTQ2ZjFiMWI1MzU1" class="card-img-top" alt="...">
+              <div class="text-center mt-2 mb-2">
+                <p>price:500</p>
+                <button class="btn btn-success">Add</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="card" style="width: 13rem;">
+              <img src="https://www.luluhypermarket.in/medias/300Wx300H-null?context=bWFzdGVyfGltYWdlc3wxNjA5M3xpbWFnZS9qcGVnfGFEVTBMMmd3WXk4NU5URXpNVEV6TkRVeU5UYzBMek13TUZkNE16QXdTRjl1ZFd4c3w3NmIzZTAyOWUzM2EwNmZlMTBlYzQwMjhiOTk5ZGEzNTE2ZmJjNDE0Zjc5NzRmOGU0NjVhM2RkMWM4NzFhYTBi" class="card-img-top" alt="...">
+              <div class="text-center mt-2 mb-2">
+                <p>price:500</p>
+                <button class="btn btn-success">Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <h4 class="headings">Home Appliances</h4>
+          <div class="col-6 col-lg-3 mb-2">
+            <div class="card" style="width: 13rem;">
+              <img src="https://www.luluhypermarket.in/medias/components-02.jpg?context=bWFzdGVyfGltYWdlc3w0Nzc1MXxpbWFnZS9qcGVnfGFHRmtMMmczTXk4NU5UWTJNemN3TlRJNU16RXdMMk52YlhCdmJtVnVkSE10TURJdWFuQm58ZGQxOTJjMTEzM2M3YmZlYzAzZjZiZWJlMDI1MGNjMzE5ZmE0MmMxYzljNGU0NGU4MmE3OWRjOWEwNmVhYzVlNA" class="card-img-top" alt="...">
+            </div>
+          </div>
+          <div class="col-6 col-lg-3 mb-2">
+            <div class="card" style="width: 13rem;">
+              <img src="https://www.luluhypermarket.in/medias/components-01.jpg?context=bWFzdGVyfGltYWdlc3w1ODY2MnxpbWFnZS9qcGVnfGFHUmlMMmcyWmk4NU5UWTJNemN3TmpZd016Z3lMMk52YlhCdmJtVnVkSE10TURFdWFuQm58ZmFlODQ2NGE5ZjJmZjQxNzExYTc3MGI5ZGI2Yzc5NDI3YzA2YTRjMjhmM2YwZGM4ZjRkODBkMzA5MTY2YTE5Nw" class="card-img-top" alt="...">
+            </div>
+          </div>
+          <div class="col-6 col-lg-3 mb-2">
+            <div class="card" style="width: 13rem;">
+              <img src="https://www.luluhypermarket.in/medias/components-03.jpg?context=bWFzdGVyfGltYWdlc3w1MTI1NnxpbWFnZS9qcGVnfGFERmpMMmcyWXk4NU5UWTJNemN3TnpreE5EVTBMMk52YlhCdmJtVnVkSE10TURNdWFuQm58OWY2NDY2NDRlNTFmZjc0ZThhOTFiOGZjM2ZkMTc1YTM1YTM1YWRkNmI2ZGZiMTk4NjJjZmFiMTYyYzgxZDU0NA" class="card-img-top" alt="...">
+            </div>
+          </div>
+          <div class="col-6 col-lg-3 mb-2">
+            <div class="card" style="width: 13rem;">
+              <img src="https://www.luluhypermarket.in/medias/components-04.jpg?context=bWFzdGVyfGltYWdlc3w0NDk3NHxpbWFnZS9qcGVnfGFEQmtMMmcyTmk4NU5UWTJNemN3T1RJeU5USTJMMk52YlhCdmJtVnVkSE10TURRdWFuQm58ZjU2YzRjMWY0MjBiOTJhMDUyNmNlOWZkMDJhODYyNzZhZWJjN2U2OWJkNjRhODM2YjdkM2I3MGM4ZmM4N2ZhOQ" class="card-img-top" alt="...">
+            </div>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <h4 class="headings">Fashion Items</h4>
+          <div class="col-6 col-lg-3 mb-2">
+            <div class="card" style="width: 13rem;">
+              <img src="https://www.luluhypermarket.in/medias/4-bannersvalantines-02.jpg?context=bWFzdGVyfGltYWdlc3w4OTIwMnxpbWFnZS9qcGVnfGFHVTRMMmc0WWk4NU5UUXhORFkyT0RRNU16RXdMelFnWW1GdWJtVnljM1poYkdGdWRHbHVaWE10TURJdWFuQm58YWY5NjY5OWRiMmIzNTE2ODgyNGZjMTE3ZjY4NDYzYWQyOTk2M2RmNjAwYjNhMWQ2MWFjZWY1NDY1NzYwZmE5NA" class="card-img-top" alt="...">
+            </div>
+          </div>
+          <div class="col-6 col-lg-3 mb-2">
+            <div class="card" style="width: 13rem;">
+              <img src="https://www.luluhypermarket.in/medias/4-bannersvalantines-04.jpg?context=bWFzdGVyfGltYWdlc3wxMjMzMjN8aW1hZ2UvanBlZ3xhR0poTDJnNFppODVOVFF4TkRZMk9UZ3dNemd5THpRZ1ltRnVibVZ5YzNaaGJHRnVkR2x1WlhNdE1EUXVhbkJufDEwMWIzMDA3NzhhZmE0ZTVjYzkxYjBhYzkwYTg4NzYyYmU1NjY1MjNjNjdhMWQxMjk2NTYzMzFhODI4NmVhOTg" class="card-img-top" alt="...">
+            </div>
+          </div>
+          <div class="col-6 col-lg-3 mb-2">
+            <div class="card" style="width: 13rem;">
+              <img src="https://www.luluhypermarket.in/medias/4-bannersvalantines-06.jpg?context=bWFzdGVyfGltYWdlc3wxMzE4ODN8aW1hZ2UvanBlZ3xhRGMwTDJoa1pDODVOVFF4TkRZM01URXhORFUwTHpRZ1ltRnVibVZ5YzNaaGJHRnVkR2x1WlhNdE1EWXVhbkJufDVjZGI5OWNmZjI1MmViMTQ0OGFjZTJkMDBkY2Q4NGIzYjEzMmNjYzVkNzQ2Nzg0ZGM4ZjgzNGUwMGJmYTQyMGM" class="card-img-top" alt="...">
+            </div>
+          </div>
+          <div class="col-6 col-lg-3 mb-2">
+            <div class="card" style="width: 13rem;">
+              <img src="https://www.luluhypermarket.in/medias/4-bannersvalantines-08.jpg?context=bWFzdGVyfGltYWdlc3w5NDMxMHxpbWFnZS9qcGVnfGFETTBMMmhsTVM4NU5UUXhORFkzTWpReU5USTJMelFnWW1GdWJtVnljM1poYkdGdWRHbHVaWE10TURndWFuQm58ZWM4NjIyZTFlYTgzZTcwZmM5NWY3NjU0NmQyY2ZkNzVjNmZkMzUxNjEyZTA4ZDJjODdlMzQ1OThlZmEwNzMxZQ" class="card-img-top" alt="...">
+            </div>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-12">
+            <img class="ad-image" src="https://www.luluhypermarket.in/medias/EOSS-offcial-amal-others-32.jpg?context=bWFzdGVyfHJvb3R8Mjg0MzMxfGltYWdlL2pwZWd8YUdRMkwyaGpOaTg1TmpJNU9ESXhNVGN6Tnprd0wwVlBVMU1nYjJabVkybGhiQ0JoYldGc0lHOTBhR1Z5Y3kwek1pNXFjR2N8MWVkN2ExMDc2OWE1YTc0ZjczMTcyY2E4MmU2MDM2MTE1MzUwOWQ1MWU5OWYwYmUwYzlhZDM5ZjZkZGRmMDlmYw" alt="">
+          </div>
+        </div>
+        <div class="row mt-3">
+          <h4 class="headings">Perfumes</h4>
+          <div class="col-6 col-lg-3 mb-2">
+          <div class="card" style="width: 13rem;">
+            <img src="https://www.luluhypermarket.in/medias/300Wx300H-null?context=bWFzdGVyfGltYWdlc3w0MjgxOXxpbWFnZS9qcGVnfGFEazFMMmd4WWk4NU16UTRNVGs1TVRVek5qazBMek13TUZkNE16QXdTRjl1ZFd4c3xhYTE2MjJhMmNjN2FhYjNmNzM5OGU5NTU0ZjhmODlkMDdjY2FkMmZlOGIzOTVmY2M4YmYxOWNiNWM1NjkzMGVk" class="card-img-top" alt="...">
+          </div>
+        </div>
+        <div class="col-6 col-lg-3 mb-2">
+          <div class="card" style="width: 13rem;">
+            <img src="https://www.luluhypermarket.in/medias/300Wx300H-null?context=bWFzdGVyfGltYWdlc3wxNTA0NnxpbWFnZS9qcGVnfGFEWXlMMmc1WlM4NU16UTRNalE0TkRNMk56WTJMek13TUZkNE16QXdTRjl1ZFd4c3wzNDhlNDhlY2E3NTk2OWQxYzdkN2JiODU2YTlmZDdhOGFmYWI1Y2VmNTdhYzhlNDAyNGMzMzVkNTQ4ZWYzNGE0" class="card-img-top" alt="...">
+          </div>
+        </div>
+        <div class="col-6 col-lg-3 mb-2">
+          <div class="card" style="width: 13rem;">
+            <img src="https://www.luluhypermarket.in/medias/300Wx300H-null?context=bWFzdGVyfGltYWdlc3wzMzkzMHxpbWFnZS9qcGVnfGFHWXdMMmhpWWk4NU16UTRNVGsyTnprME16azRMek13TUZkNE16QXdTRjl1ZFd4c3xlNDcwMWIyMjZlOTlmNjg2ZWJiYzcyODM5ZThlMTcwODgwNTE2ZGMwZmQzN2RiMTU5MjcwODk2MjdmMzk2NGZi" class="card-img-top" alt="...">
+          </div>
+        </div>
+        <div class="col-6 col-lg-3 mb-2">
+          <div class="card" style="width: 13rem;">
+            <img src="https://www.luluhypermarket.in/medias/300Wx300H-null?context=bWFzdGVyfGltYWdlc3wxMTkzM3xpbWFnZS9qcGVnfGFEWTBMMmcwT1M4NU16UTRNalF4TXpVNE9EYzRMek13TUZkNE16QXdTRjl1ZFd4c3xjNmY3MWU1OTYxYjYzYzZiNjIzMzczYmUyOTUzMTY3YTI1YTE3MzdkZjdhYzAzNDZhNDZjMTM5YjI5N2ZlMmJi" class="card-img-top" alt="...">
+          </div>
+        </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-12 col-lg-6">
+            <img class="ad-image" src="https://www.luluhypermarket.in/medias/new-layout-40.jpg?context=bWFzdGVyfHJvb3R8ODAwMzB8aW1hZ2UvanBlZ3xhRFZtTDJoaU9DODVORE0zTVRNM09EazFORFUwTDI1bGR5QnNZWGx2ZFhRdE5EQXVhbkJufGE2NWE3YzY2MzBiYjZlNmY2Yzc1OTFiYjZjY2NhZGY3ODliYTE4NWJjODVlNzVkNjdhZWY1Yjc3MDEzM2FjMTg" alt="">
+          </div>
+          <div class="col-12 col-lg-6 mb-2">
+            <img class="ad-image" src="https://www.luluhypermarket.in/medias/new-layout-38.jpg?context=bWFzdGVyfHJvb3R8NzIxNTN8aW1hZ2UvanBlZ3xhREptTDJoaVppODVORE0zTVRNM05qazRPRFEyTDI1bGR5QnNZWGx2ZFhRdE16Z3VhbkJufDM2ZGJiYjJjMjcwN2IzYTE5YmRiMmYwMzUwYmQxNDAzZjk0YjUyZGMzZTI2NzI0OTJhNWEyYThlMzdiMjI1MjA" alt="">
+          </div>
+          <div class="col-12 col-lg-6 mb-2">
+            <img class="ad-image" src="https://www.luluhypermarket.in/medias/new-layout-41.jpg?context=bWFzdGVyfHJvb3R8OTk5OTB8aW1hZ2UvanBlZ3xhRFJsTDJoaU5TODVORE0zTVRNM09UWXdPVGt3TDI1bGR5QnNZWGx2ZFhRdE5ERXVhbkJufDA0MDVmM2MwZmVhMzQyNGRjZmIyZDk0ZWQwYTU0OWM0ZDFjYTFlNzczYjU1NjEzNmJmMmY1M2U5OTE3N2QwY2I" alt="">
+          </div>
+          <div class="col-12 col-lg-6 mb-2">
+            <img class="ad-image" src="https://www.luluhypermarket.in/medias/new-layout-42.jpg?context=bWFzdGVyfHJvb3R8ODg0MDl8aW1hZ2UvanBlZ3xhR1V6TDJnMk9TODVORE0zTVRNNE1Ea3lNRFl5TDI1bGR5QnNZWGx2ZFhRdE5ESXVhbkJufGZmZmJjMmM1YzJmOTkyYzYxOTcxMGE1YTdlNGEwNWRhYjljMmFkOTk3NGQwM2U0MzBiY2I5MmJkMjUzNzYxNjk" alt="">
+          </div>
+          <div class="col-12 col-lg-6 mb-2">
+            <img class="ad-image" src="https://www.luluhypermarket.in/medias/new-layout-43.jpg?context=bWFzdGVyfHJvb3R8OTc5MTR8aW1hZ2UvanBlZ3xhR1EwTDJnMk15ODVORE0zTVRNNE1qSXpNVE0wTDI1bGR5QnNZWGx2ZFhRdE5ETXVhbkJufDFkNzEwMmQ1YzFlNjdhYWJkYTE3OTg0NjBlYmNmMTI5NTExNzAzNWVlNmNlZjA4MjIzZDFlYmI3NmY4MzJjYTU" alt="">
+          </div>
+          <div class="col-12 col-lg-6 mb-2">
+            <img class="ad-image" src="https://www.luluhypermarket.in/medias/new-layout-39.jpg?context=bWFzdGVyfHJvb3R8MTE2OTY4fGltYWdlL2pwZWd8YURGbEwyaGlZeTg1TkRNM01UTTNOelkwTXpneUwyNWxkeUJzWVhsdmRYUXRNemt1YW5CbnwyM2MxNDkxM2Y0M2Q5ODI1NzIxYzRlYzE3YWRlNTc3MDdiZGUwMzYyNTM0MDQwYTFlOGE5ZmUyZDlmZDA5M2Zj" alt="">
+          </div>
+        </div>
+    </div>
+    </div>
+    <!--/products-section-->
+
+    <!--contact-section--> 
+    <div class="row mt-5">
+      <div class="contact-section">
+        <div class="col-6 col-lg-6">
+          <div class="left-section ms-5 ps-5 pt-3">
+            <h5>GET IN TOUCH</h5>
+            <h6>With our support channels</h6>
+          </div>
+        </div>
+        <div class="col-6 col-lg-6">
+          <div class="right-section pt-3">
+            <i class="fa-brands fa-whatsapp ms-2 mt-2"></i>
+            <li class="ms-2">
+              <span class="d-inline d-sm-none"><br></span>WHATSAPP :
+            </li>
+            <li class="ms-2">
+              <span class="d-inline d-sm-none"><br></span>+918848001369
+            </li>
+            <i class="fa-solid fa-phone ms-2 mt-2 mt-lg-0"></i>
+            <li class="ms-2">
+              <span class="d-inline d-sm-none"><br></span>TELEPHONE :
+            </li>
+            <li class="ms-2">
+              <span class="d-inline d-sm-none"><br></span>18003098109
+            </li>
+            <i class="fa-solid fa-envelope ms-2 mt-2 mt-lg-0"></i>
+            <li class="ms-2">
+              <span class="d-inline d-sm-none"><br></span>EMAIL :
+            </li>
+            <li class="ms-2">
+              <span class="d-inline d-sm-none"><br></span>customercareindia@luluhypermarket.in
+            </li>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/contact-section-->
+
+    <!--footer-section-->
+    <div class="row">
+      <div class="footer-section">
+        <div class="col-12 col-lg-12 text-center">
+          <img class="lulu-logo" src="https://www.luluhypermarket.in/medias/lulu-logo-new.png?context=bWFzdGVyfGltYWdlc3w0MTc3OXxpbWFnZS9wbmd8YUdJd0wyaGtaQzg1TWpZNU5EY3lPVGcxTVRFNEwyeDFiSFV0Ykc5bmJ5MXVaWGN1Y0c1bnxiOWVkODc1OWJmZWFmNjYzNGFiY2RmMjJmODJlNTliOTY0YWQwNjFiZGNmZWEzMTJiZTVmMmY4MjY2YmQ3Zjhl" alt="">
+        </div>
+        <div class="row mt-2">
+          <div class="col-12 col-lg-6 text-center">
+            <img src="https://www.luluhypermarket.in/_ui/responsive/common/images/theme-lulu-ar/images/appstore-logo.png" alt="">
+          </div>
+          <div class="col-12 col-lg-6 text-center">
+            <img src="https://www.luluhypermarket.in/_ui/responsive/common/images/theme-lulu-ar/images/appstore-logo.png" alt="">
+          </div>
+        </div>
+        <div class="row mt-3">
+          <h4 class="text-center headings">Social Media Connect</h4>
+        </div>
+        <div class="row mt-3">
+          <div class="social-links">
+          <a href="https://www.facebook.com/LuLuHypermarketKLA"><li><i class="fa-brands fa-facebook"></i></li></a>
+          <a href="https://www.instagram.com/luluhyperkla/"><li><i class="fa-brands fa-instagram"></i></li></a>
+          <a href="https://twitter.com/LuLuGrroup_India/"><li><i class="fa-brands fa-twitter"></i></li></a>
+          <a href=""><li><i class="fa-brands fa-youtube"></i></li></a>
+        </div>
+        </div>
+        <div class="row mt-3 mb-3">
+          <div class="col-12 text-center">
+            <h6>©2023 Lulu Hypermarket</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/footer-section-->
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+.lulu-logo{
+    width: 160px;
+}
+.ad-image{
+    width: 100%;
+}
+.category-image{
+    width: 100%;
+}
+.product-section{
+    width: 100%;
+    height: auto;
+    background-color: rgba(0,0,0,0.05);
+}
+.headings{
+    font-weight: bold;
+}
+.product-image{
+    width: 50%;
+}
+.contact-section{
+    width: 100%;
+    height: auto;
+    background-color: #00a651;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*.left-section{
+    width: 50%
+}
+.right-section{
+    width: 50%;
+}*/
+.right-section li{
+    list-style: none;
+}
+.right-section i{
+    font-size: xx-large;
+}
+.footer-section{
+    width: 100%;
+    height: auto;
+    background-color:#efefef ;
+}
+.social-links li{
+    list-style: none;
+    float: left;
+}
+a{
+    color:black;
+}
+@media (min-width:701px) and (max-width:1800px){
+     .social-links{
+      margin-left: 550px;
+    }
+    .social-links li{
+        margin-left: 50px;
+    }
+    .social-links i{
+        font-size: xx-large;
+    }
+    .inp{
+        width: 530px;
+    }
+    
+}
+@media (min-width:100px) and (max-width:700px){
+    .social-links{
+     margin-left: 110px;
+   }
+   .social-links li{
+    margin-left:15px;
+}
+   .social-links i{
+       font-size:x-large;
+   }
+}
+
